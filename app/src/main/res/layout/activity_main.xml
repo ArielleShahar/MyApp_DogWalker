@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="750dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <ImageView
+            android:id="@+id/maketingFrase"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/marketing" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/dog1" />
+
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+
+            android:drawablePadding="20dp"
+            android:hint="enter your username"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+
+
+
+            android:drawablePadding="20dp"
+            android:hint="write your pasword"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/Loginbutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ADD8E6"
+            android:padding="10dp"
+            android:text="login"
+            android:textColor="#000000"
+            />
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginbutton"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:alpha="0.7"
+            android:backgroundTint="#30ffffff"
+            android:padding="5dp"
+            android:text="sign up"
+            android:textColor="#03045E"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
